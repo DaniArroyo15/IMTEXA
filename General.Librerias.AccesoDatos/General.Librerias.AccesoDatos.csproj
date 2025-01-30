@@ -55,6 +55,9 @@
     <Content Include="SQL\Stores\Almacen\Categorias\paCategorias_Listar.sql" />
     <Content Include="SQL\Stores\Almacen\Categorias\paCategorias_ListarPorId.sql" />
     <Content Include="SQL\Stores\Almacen\Categorias\paCategorias_Importar.sql" />
+    <Content Include="SQL\Stores\Almacen\Producto\paCategoria_ListarCombo.sql" />
+    <Content Include="SQL\Stores\Almacen\Producto\paProducto_Importar.sql" />
+    <Content Include="SQL\Stores\Almacen\Producto\paProducto_ListaPorCategoria.sql" />
     <Content Include="SQL\Stores\Convocatorias\Convocatoria\paGenSelConvocatorias_Listar.sql" />
     <Content Include="SQL\Stores\Convocatorias\paGenSelConvocatorias_ListarInicial.sql" />
     <Content Include="SQL\Stores\Convocatorias\Seleccion\paGenSelMEtapa_ListarPorNroPlaza.sql" />
