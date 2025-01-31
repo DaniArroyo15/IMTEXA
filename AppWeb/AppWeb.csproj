@@ -87,6 +87,7 @@
     <Content Include="Images\Logos\logoPVN.png" />
     <Content Include="Images\Logos\LogoSGRH.png" />
     <Content Include="Images\Profile\user-1.jpg" />
+    <Content Include="Popups\Almacen\Producto.html" />
     <Content Include="Popups\Almacen\Categoria.html" />
     <Content Include="Scripts\Almacen\Categoria.js" />
     <Content Include="Scripts\Almacen\Producto.js" />

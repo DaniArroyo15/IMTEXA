@@ -29,5 +29,31 @@ namespace AppWeb.Areas.Almacen.Controllers
             rpta = odaSQL.EjecutarComando("paProducto_ListaPorCategoria", "@peIdCategoria", CategoriaId);
             return rpta;
         }
+
+        public string GrabaProducto()
+        {
+            string rpta = "";
+            string data = Request.Form["Data"];
+            var user = Session["Usuario"].ToString().Split('|');
+            data = string.Format("{0}~{1}", user[1],data);
+            rpta = odaSQL.EjecutarComando("paProducto_Grabar", "@pvcData", data);
+            return rpta;
+        }
+
+        public string ListaProductoId(string ProductoId)
+        {
+            string rpta = "";
+            rpta = odaSQL.EjecutarComando("paProducto_ObtenerPorId", "@peIdProducto", ProductoId);
+            return rpta;
+        }
+
+        public string EliminaProducto(string ProductoId)
+        {
+            string rpta = "";
+            var user = Session["Usuario"].ToString().Split('|');
+            string data = string.Format("{0}~{1}", user[1], ProductoId);
+            rpta = odaSQL.EjecutarComando("paProducto_Eliminar", "@pvcData", data);
+            return rpta;
+        }
     }
 }

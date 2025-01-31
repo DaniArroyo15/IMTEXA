@@ -49,6 +49,24 @@
   <ItemGroup>
     <Content Include="SQL\Functions\fnSplitStringRows.sql" />
     <Content Include="SQL\Functions\fnSplitStringTable.sql" />
+    <Content Include="SQL\SCRIPT\1. Tables\Script_CreateTable.sql" />
+    <Content Include="SQL\SCRIPT\2. Insert\Script_Insert.sql" />
+    <Content Include="SQL\SCRIPT\3. Store\1. paUsuario_ListarDatos.sql" />
+    <Content Include="SQL\SCRIPT\3. Store\10. paCategoria_ListarCombo.sql" />
+    <Content Include="SQL\SCRIPT\3. Store\11. paProducto_ObtenerPorId.sql" />
+    <Content Include="SQL\SCRIPT\3. Store\12. paProducto_Grabar.sql" />
+    <Content Include="SQL\SCRIPT\3. Store\13. paProducto_Eliminar.sql" />
+    <Content Include="SQL\SCRIPT\3. Store\2. paMenu_ListarPorUsuario.sql" />
+    <Content Include="SQL\SCRIPT\3. Store\3. paCategoria_Lista.sql" />
+    <Content Include="SQL\SCRIPT\3. Store\4. paCategoria_Grabar.sql" />
+    <Content Include="SQL\SCRIPT\3. Store\5. paCategoria_ObtenerPorId.sql" />
+    <Content Include="SQL\SCRIPT\3. Store\6. paProducto_ListaPorCategoria.sql" />
+    <Content Include="SQL\SCRIPT\3. Store\7. paPersona_Grabar.sql" />
+    <Content Include="SQL\SCRIPT\3. Store\8. paPersona_Lista.sql" />
+    <Content Include="SQL\SCRIPT\3. Store\9. paProducto_Importar.sql" />
+    <Content Include="SQL\SCRIPT\3. Store\paPerMFeriados_Importar.sql" />
+    <Content Include="SQL\SCRIPT\4. Funciones\fnSplitRows.sql" />
+    <Content Include="SQL\SCRIPT\4. Funciones\fnSplitTable.sql" />
     <Content Include="SQL\Stores\Almacen\Categorias\paCategorias_Agregar.sql" />
     <Content Include="SQL\Stores\Almacen\Categorias\paCategorias_Editar.sql" />
     <Content Include="SQL\Stores\Almacen\Categorias\paCategorias_Eliminar.sql" />

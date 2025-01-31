@@ -1,4 +1,5 @@
-﻿var gIdPersona="";
+﻿var gIdPersona = "";
+var gGender = "";
 window.onload = function () {
     _Load.Close();
     _Usuario = sessionStorage.getItem("JUsuario").split(_sepFields);
@@ -23,6 +24,7 @@ function setEvents() {
             Notify.Show('e', 'Debe llenar campos requeridos (*)');
             return;
         }
+
         if (gIdPersona) {
             let text = "¿Está seguro de actualizar el registro?";
             new oDialog(text,
@@ -72,7 +74,7 @@ function mostrarLista(rpta) {
 }
 
 function Grabar() {
-    var data = gIdPersona + "|" + GUI.ObtenerDatos("G");
+    var data = gIdPersona + "|" + gGender + "|" +  Tools.ObtenerDatos("G");
     var frm = new FormData();
     frm.append("Data", data);
     Http.post(_Url + "GrabaPersona", rptaGrabar, frm);
@@ -100,4 +102,8 @@ function LimpiaControl() {
     txtTelefono.value = "";
     txtCorreo.value = "";
     txtDireccion.value = "";
+}
+
+function ObtenGender() {
+    gGender = document.querySelector('input[name="Gender"]:checked');
 }
